@@ -48,12 +48,34 @@
         <section class="container">
         <h3 class="infosaqui"><b>Calcule Seu IMC:</b></h3>
         <form class="form" action="/" method="POST">
-        <p>Peso (kg): <input type="number" class="peso" step="0.01" name="peso"></p>
-        <p>Altura (m): <input type="number" class="altura" step="0.01" name="altura"></p>
+       <p>
+  Peso (kg):
+  <input 
+    type="number"
+    class="peso"
+    step="0.01"
+    inputmode="decimal"
+    placeholder="Ex: 70.5"
+    required
+  >
+</p>
+
+<p>
+  Altura (m):
+  <input 
+    type="number"
+    class="altura"
+    step="0.01"
+    inputmode="decimal"
+    placeholder="Ex: 1.75"
+    required
+  >
+</p>
+
         <button type="submit">Enviar</button>
         </form>
     </section>
-    <div class = resultado> </div>
+    <div class="resultado oculto"></div>
     </main>
 
    <script src="script.js"></script>

@@ -328,3 +328,31 @@ button:hover {
     }
 }
 
+.resultado {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+.resultado.mostrar {
+    display: block;
+}
+
+.resultado.normal {
+    background: rgba(0, 255, 0, 0.15);
+    border: 1px solid #00ff99;
+}
+
+.resultado.alerta {
+    background: rgba(255, 255, 0, 0.15);
+    border: 1px solid #ffee00;
+}
+
+.resultado.perigo {
+    background: rgba(255, 0, 0, 0.2);
+    border: 1px solid #ff4444;
+}
