@@ -28,6 +28,7 @@ main {
     border-radius: 20px;
     width: 100%;    
     max-width: 450px;
+    margin: 20px;
     box-shadow:
         0 0 20px #00ffff,
         0 0 40px #00ffff,
@@ -173,5 +174,157 @@ button:hover {
 @keyframes blink {
     from { opacity: 0.6; }
     to { opacity: 1; }
+}
+
+/* RESPONSIVIDADE MOBILE */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        padding: 25px 20px;
+        border-radius: 15px;
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    /* Tabela responsiva */
+    .tabelaimc {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+        border-collapse: collapse;
+    }
+
+    .tabelaimc th,
+    .tabelaimc td {
+        padding: 8px 10px;
+    }
+
+    .infosaqui {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+
+    .form p {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+
+    .form input {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+        border-radius: 8px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 0.95rem;
+        margin-top: 12px;
+    }
+
+    button:hover {
+        transform: scale(1.05) rotate(-2deg);
+    }
+
+    .resultado {
+        margin-top: 20px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+        background: radial-gradient(circle at top, #0ff, #000 70%);
+    }
+
+    main {
+        padding: 20px 15px;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    header h1 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    /* Tabela em modo stack para mobile pequeno */
+    .tabelaimc {
+        font-size: 0.75rem;
+        margin-bottom: 25px;
+    }
+
+    .tabelaimc thead {
+        display: none;
+    }
+
+    .tabelaimc tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #00ffff;
+        border-radius: 8px;
+        padding: 10px;
+        background: rgba(0, 255, 255, 0.05);
+    }
+
+    .tabelaimc td {
+        display: block;
+        text-align: right;
+        padding: 8px 0;
+        border: none;
+        border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+    }
+
+    .tabelaimc td:last-child {
+        border-bottom: none;
+    }
+
+    .tabelaimc td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        color: #00ffff;
+    }
+
+    .infosaqui {
+        font-size: 0.75rem;
+        margin-bottom: 18px;
+    }
+
+    .form p {
+        font-size: 0.8rem;
+        margin-bottom: 13px;
+    }
+
+    .form input {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+        border-radius: 6px;
+    }
+
+    .form input:focus {
+        transform: translateY(-1px);
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        transform: scale(1.02);
+    }
+
+    .resultado {
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
 }
 
